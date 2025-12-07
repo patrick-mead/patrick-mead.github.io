@@ -83,6 +83,17 @@ ninja.data = [{
             window.location.href = "/blog/2025/volatility-drag/";
           
         },
+      },{id: "post-on-funding-a-stochastic-liability",
+        
+          title: "On Funding A Stochastic Liability",
+        
+        description: "We consider various correlations between domestic equities, global (ex domestic) equities, and domestic property prices.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/stochastic-liability/";
+          
+        },
       },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
