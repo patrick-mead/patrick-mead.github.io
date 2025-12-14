@@ -83,11 +83,11 @@ ninja.data = [{
             window.location.href = "/blog/2025/volatility-drag/";
           
         },
-      },{id: "post-on-funding-a-stochastic-liability",
+      },{id: "post-saving-for-a-house-is-a-duration-problem",
         
-          title: "On Funding A Stochastic Liability",
+          title: "Saving for a house is a duration problem",
         
-        description: "We consider various correlations between domestic equities, global (ex domestic) equities, and domestic property prices.",
+        description: "",
         section: "Posts",
         handler: () => {
           
