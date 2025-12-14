@@ -20,20 +20,25 @@ Let,
 + $L$, denote the market price of the liability.
 
 Define the funding ratio as,
+
 $$ X := \frac{P}{L}. $$
 
 For the current purposes, we will treat the house price as the present value of a constant flow of real housing services $H > 0$.
+
 $$ L(r) = \int_0^\infty \exp(-rt) H \, dt = \frac{H}{r}. $$
 
 The duration is the semi-elasticity of price with respect to the discount rate,
+
 $$ D := - \frac{\partial \log L}{\partial r}. $$
 
 Applied to our house liability $L$, gives us,
+
 $$ D = \frac{1}{r}. $$
 
 Thus housing is a long-duration asset, and further is more sensitive to rate changes when rates are low.
 
 As cash has zero duration, the duration of the funding ratio is,
+
 $$ \frac{\partial X}{\partial r} = \frac{1}{r}. $$
 
 In this model, interest rates declines cause house prices to increase but do not affect the value of cash holdings.
@@ -53,6 +58,7 @@ Housing demand is driven in part by macroeconomic factors such as wages, employm
 This risk is spanned by equities.
 
 We therefore model housing returns as,
+
 $$ l = \beta_B r_B + \beta_E r_E + \epsilon. $$
 
 Where, 
@@ -64,10 +70,12 @@ Let $R$ denote the vector of excess returns on tradable assets.
 A portfolio is represented by a vector $w$ denoting the weighting applied to each asset.
 The return of a portfolio is $r_p = w'R$, and the funding-gap is given by $r_p - l$.
 The optimisation problem is then,
-$$ \min_w \Var(w'R - l). $$
+
+$$ \min_w \textrm{Var}(w'R - l). $$
 
 Which can be expanded to give,
-$$ \Var(w'R - l) = w'\sum_{RR}w - 2w'\sum_{Rl} + \Var(l).
+
+$$ \textrm{Var}(w'R - l) = w'\sum_{RR}w - 2w'\sum_{Rl} + \textrm{Var}(l). $$
 
 As a result, as long as there exists at least one tradable asset with non-zero convariance with housing returns, the 100% cash portfolio does not minimise the funding-gap variance.
 This also supports maintaining a home-country bias, as domestic equities are likely to covary more strongly with domestic housing than foreign equities.
