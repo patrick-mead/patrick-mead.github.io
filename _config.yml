@@ -1,0 +1,7 @@
+title: "Patrick Mead"
+description: "Short tagline"
+theme: jekyll-theme-minimal
+
+markdown: kramdown
+kramdown:
+  input: GFM

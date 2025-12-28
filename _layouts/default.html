@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
+    <!-- MathJax -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+        <p>{{ site.description }}</p>
+
+        <nav>
+          <a href="/">About</a> |
+          <a href="/blog/">Blog</a> |
+          <a href="/publications/">Publications</a> |
+          <a href="/cv/">CV</a> |
+          <a href="/bookshelf/">Bookshelf</a>
+        </nav>
+      </header>
+
+      <section>
+        {{ content }}
+      </section>
+    </div>
+  </body>
+</html>
